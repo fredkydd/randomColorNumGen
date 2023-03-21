@@ -1,0 +1,74 @@
+@media (width <= 720px) {
+  /* Open-Sans 300 400 600 800, Montserrat 100 300 400 600 800 900, Pacifico 100 300 400 700 900, Roboto 100 300 400 700 900 */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800;900&family=Open+Sans:wght@300;400;600;800&family=Pacifico&family=Roboto:wght@100;300;400;700;900&display=swap');
+  @import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+  :root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --grey: #eee;
+    --dark-grey: #222831;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    border-radius: 0.3125rem;
+  }
+
+  body {
+    font: 1rem 'Open Sans', sans-serif;
+    height: 100dvh;
+  }
+
+  section {
+    display: grid;
+    place-content: center;
+    height: 80dvh;
+    width: 100%;
+  }
+
+  article {
+    min-width: fit-content;
+    display: grid;
+    grid: repeat(3, minmax(min-content, 1fr)) / auto-flow dense 1fr;
+    gap: 0.625rem;
+    justify-items: center;
+    background: var(--color-primary);
+    color: var(--white);
+    border-radius: 0.625rem;
+    box-shadow: 0.5rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+    padding: 11px;
+  }
+
+  h1 {
+    font: 1rem 'Pacifico', sans-serif;
+
+    filter: drop-shadow(0.4375rem 0.4375rem 0.0625rem rgb(0 0 0 / 0.4));
+  }
+
+  span {
+    font-size: 1rem;
+    filter: drop-shadow(0.4375rem 0.4375rem 0.0625rem rgb(0 0 0 / 0.4));
+  }
+
+  button {
+    cursor: pointer;
+    align-self: center;
+    padding: 0.5rem;
+    border-radius: 30px;
+    color: var(--dark-grey);
+    font: 0.75rem 'Roboto', sans-serif;
+  }
+}
